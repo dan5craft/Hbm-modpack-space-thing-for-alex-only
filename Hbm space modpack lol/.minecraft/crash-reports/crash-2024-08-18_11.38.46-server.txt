@@ -1,0 +1,157 @@
+---- Minecraft Crash Report ----
+// Hey, that tickles! Hehehe!
+
+Time: 8/18/24 11:38 AM
+Description: Error loading dungeon caveTests.prop from missing folder: C:\Users\danie\AppData\Roaming\PrismLauncher\instances\1.7.10\.minecraft\config\Chocolate\snowCastles
+
+java.lang.NullPointerException: Error loading dungeon caveTests.prop from missing folder: C:\Users\danie\AppData\Roaming\PrismLauncher\instances\1.7.10\.minecraft\config\Chocolate\snowCastles
+	at com.chocolate.chocolateQuest.builder.BuilderHelper.getRandomNBTMap(BuilderHelper.java:669)
+	at com.chocolate.chocolateQuest.builder.BuilderTemplate.generate(BuilderTemplate.java:55)
+	at com.chocolate.chocolateQuest.WorldGeneratorNew.generateBigDungeon(WorldGeneratorNew.java:150)
+	at com.chocolate.chocolateQuest.WorldGeneratorNew.generateSurface(WorldGeneratorNew.java:100)
+	at com.chocolate.chocolateQuest.WorldGeneratorNew.generate(WorldGeneratorNew.java:62)
+	at cpw.mods.fml.common.registry.GameRegistry.generateWorld(GameRegistry.java:112)
+	at net.minecraft.world.gen.ChunkProviderServer.func_73153_a(ChunkProviderServer.java:280)
+	at net.minecraft.world.chunk.Chunk.func_76624_a(Chunk.java:1055)
+	at net.minecraft.world.gen.ChunkProviderServer.originalLoadChunk(ChunkProviderServer.java:190)
+	at net.minecraft.world.gen.ChunkProviderServer.loadChunk(ChunkProviderServer.java:131)
+	at net.minecraft.server.management.PlayerManager$PlayerInstance.<init>(PlayerManager.java:370)
+	at net.minecraft.server.management.PlayerManager.func_72690_a(PlayerManager.java:97)
+	at net.minecraft.server.management.PlayerManager.func_72683_a(PlayerManager.java:138)
+	at net.minecraft.server.management.ServerConfigurationManager.func_72375_a(ServerConfigurationManager.java:240)
+	at net.minecraft.server.management.ServerConfigurationManager.transferPlayerToDimension(ServerConfigurationManager.java:505)
+	at net.minecraft.server.management.ServerConfigurationManager.func_72356_a(ServerConfigurationManager.java:492)
+	at net.minecraft.entity.player.EntityPlayerMP.func_71027_c(EntityPlayerMP.java:529)
+	at net.minecraft.block.BlockEndPortal.func_149670_a(SourceFile:62)
+	at net.minecraft.entity.Entity.func_145775_I(Entity.java:870)
+	at net.minecraft.entity.Entity.func_70091_d(Entity.java:803)
+	at net.minecraft.entity.EntityLivingBase.func_70612_e(EntityLivingBase.java:1490)
+	at net.minecraft.entity.player.EntityPlayer.func_70612_e(EntityPlayer.java:1656)
+	at net.minecraft.entity.EntityLivingBase.func_70636_d(EntityLivingBase.java:1814)
+	at net.minecraft.entity.player.EntityPlayer.func_70636_d(EntityPlayer.java:540)
+	at net.minecraft.entity.EntityLivingBase.func_70071_h_(EntityLivingBase.java:1611)
+	at net.minecraft.entity.player.EntityPlayer.func_70071_h_(EntityPlayer.java:288)
+	at net.minecraft.entity.player.EntityPlayerMP.func_71127_g(EntityPlayerMP.java:295)
+	at net.minecraft.network.NetHandlerPlayServer.func_147347_a(NetHandlerPlayServer.java:303)
+	at net.minecraft.network.play.client.C03PacketPlayer.func_148833_a(SourceFile:137)
+	at net.minecraft.network.play.client.C03PacketPlayer$C04PacketPlayerPosition.func_148833_a(SourceFile:63)
+	at net.minecraft.network.NetworkManager.func_74428_b(NetworkManager.java:212)
+	at net.minecraft.network.NetworkSystem.func_151269_c(NetworkSystem.java:165)
+	at net.minecraft.server.MinecraftServer.func_71190_q(MinecraftServer.java:659)
+	at net.minecraft.server.MinecraftServer.func_71217_p(MinecraftServer.java:547)
+	at net.minecraft.server.integrated.IntegratedServer.func_71217_p(IntegratedServer.java:111)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:427)
+	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:685)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at com.chocolate.chocolateQuest.builder.BuilderHelper.getRandomNBTMap(BuilderHelper.java:669)
+	at com.chocolate.chocolateQuest.builder.BuilderTemplate.generate(BuilderTemplate.java:55)
+	at com.chocolate.chocolateQuest.WorldGeneratorNew.generateBigDungeon(WorldGeneratorNew.java:150)
+	at com.chocolate.chocolateQuest.WorldGeneratorNew.generateSurface(WorldGeneratorNew.java:100)
+	at com.chocolate.chocolateQuest.WorldGeneratorNew.generate(WorldGeneratorNew.java:62)
+	at cpw.mods.fml.common.registry.GameRegistry.generateWorld(GameRegistry.java:112)
+	at net.minecraft.world.gen.ChunkProviderServer.func_73153_a(ChunkProviderServer.java:280)
+	at net.minecraft.world.chunk.Chunk.func_76624_a(Chunk.java:1055)
+	at net.minecraft.world.gen.ChunkProviderServer.originalLoadChunk(ChunkProviderServer.java:190)
+	at net.minecraft.world.gen.ChunkProviderServer.loadChunk(ChunkProviderServer.java:131)
+	at net.minecraft.server.management.PlayerManager$PlayerInstance.<init>(PlayerManager.java:370)
+	at net.minecraft.server.management.PlayerManager.func_72690_a(PlayerManager.java:97)
+	at net.minecraft.server.management.PlayerManager.func_72683_a(PlayerManager.java:138)
+	at net.minecraft.server.management.ServerConfigurationManager.func_72375_a(ServerConfigurationManager.java:240)
+	at net.minecraft.server.management.ServerConfigurationManager.transferPlayerToDimension(ServerConfigurationManager.java:505)
+	at net.minecraft.server.management.ServerConfigurationManager.func_72356_a(ServerConfigurationManager.java:492)
+	at net.minecraft.entity.player.EntityPlayerMP.func_71027_c(EntityPlayerMP.java:529)
+	at net.minecraft.block.BlockEndPortal.func_149670_a(SourceFile:62)
+
+-- Block being collided with --
+Details:
+	Block type: ID #119 (tile.null // net.minecraft.block.BlockEndPortal)
+	Block data value: 0 / 0x0 / 0b0000
+	Block location: World: (10829,64,11255), Chunk: (at 13,4,7 in 676,703; contains blocks 10816,0,11248 to 10831,255,11263), Region: (21,21; contains chunks 672,672 to 703,703, blocks 10752,0,10752 to 11263,255,11263)
+Stacktrace:
+	at net.minecraft.entity.Entity.func_145775_I(Entity.java:870)
+
+-- Entity being checked for collision --
+Details:
+	Entity Type: null (net.minecraft.entity.player.EntityPlayerMP)
+	Entity ID: 2686
+	Entity Name: Mega_Steve01
+	Entity's Exact location: 100.00, 49.00, 0.00
+	Entity's Block location: World: (100,49,0), Chunk: (at 4,3,0 in 6,0; contains blocks 96,0,0 to 111,255,15), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Entity's Momentum: 0.00, 0.00, 0.00
+Stacktrace:
+	at net.minecraft.entity.Entity.func_70091_d(Entity.java:803)
+	at net.minecraft.entity.EntityLivingBase.func_70612_e(EntityLivingBase.java:1490)
+	at net.minecraft.entity.player.EntityPlayer.func_70612_e(EntityPlayer.java:1656)
+	at net.minecraft.entity.EntityLivingBase.func_70636_d(EntityLivingBase.java:1814)
+	at net.minecraft.entity.player.EntityPlayer.func_70636_d(EntityPlayer.java:540)
+	at net.minecraft.entity.EntityLivingBase.func_70071_h_(EntityLivingBase.java:1611)
+	at net.minecraft.entity.player.EntityPlayer.func_70071_h_(EntityPlayer.java:288)
+
+-- Player being ticked --
+Details:
+	Entity Type: null (net.minecraft.entity.player.EntityPlayerMP)
+	Entity ID: 2686
+	Entity Name: Mega_Steve01
+	Entity's Exact location: 100.00, 49.00, 0.00
+	Entity's Block location: World: (100,49,0), Chunk: (at 4,3,0 in 6,0; contains blocks 96,0,0 to 111,255,15), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Entity's Momentum: 0.00, 0.00, 0.00
+Stacktrace:
+	at net.minecraft.entity.player.EntityPlayerMP.func_71127_g(EntityPlayerMP.java:295)
+	at net.minecraft.network.NetHandlerPlayServer.func_147347_a(NetHandlerPlayServer.java:303)
+	at net.minecraft.network.play.client.C03PacketPlayer.func_148833_a(SourceFile:137)
+	at net.minecraft.network.play.client.C03PacketPlayer$C04PacketPlayerPosition.func_148833_a(SourceFile:63)
+	at net.minecraft.network.NetworkManager.func_74428_b(NetworkManager.java:212)
+
+-- Ticking connection --
+Details:
+	Connection: net.minecraft.network.NetworkManager@5b64379e
+Stacktrace:
+	at net.minecraft.network.NetworkSystem.func_151269_c(NetworkSystem.java:165)
+	at net.minecraft.server.MinecraftServer.func_71190_q(MinecraftServer.java:659)
+	at net.minecraft.server.MinecraftServer.func_71217_p(MinecraftServer.java:547)
+	at net.minecraft.server.integrated.IntegratedServer.func_71217_p(IntegratedServer.java:111)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:427)
+	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:685)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 1.8.0_411, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 790027904 bytes (753 MB) / 1574961152 bytes (1502 MB) up to 4772593664 bytes (4551 MB)
+	JVM Flags: 3 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xms512m -Xmx5120m
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 12, tallocated: 94
+	FML: MCP v9.05 FML v7.10.99.99 Minecraft Forge 10.13.4.1614 18 mods loaded, 18 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJAAAA	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJAAAA	FML{7.10.99.99} [Forge Mod Loader] (forge-1.7.10-10.13.4.1614-1.7.10-universal.jar) 
+	UCHIJAAAA	Forge{10.13.4.1614} [Minecraft Forge] (forge-1.7.10-10.13.4.1614-1.7.10-universal.jar) 
+	UCHIJAAAA	CodeChickenCore{1.0.7.48} [CodeChicken Core] (minecraft.jar) 
+	UCHIJAAAA	NotEnoughItems{1.0.5.120} [Not Enough Items] (NotEnoughItems-1.7.10-1.0.5.120-universal.jar) 
+	UCHIJAAAA	chocolateQuest{1.0} [Chocolate Quest] (chocolateQuest-1.7.10-1.1d.jar) 
+	UCHIJAAAA	cookingbook{1.0.140} [Cooking for Blockheads] (cookingbook-mc1.7.10-1.0.140.jar) 
+	UCHIJAAAA	CustomSpawner{3.3.0} [DrZhark's CustomSpawner] (CustomMobSpawner 3.3.0.zip) 
+	UCHIJAAAA	MoCreatures{6.3.1} [DrZhark's Mo'Creatures Mod] (DrZharks MoCreatures Mod v6.3.1.zip) 
+	UCHIJAAAA	dsurround{1.0.6.4} [Dynamic Surroundings] (DynamicSurroundings-1.7.10-1.0.6.4.jar) 
+	UCHIJAAAA	fastleafdecay{1.4} [Fast Leaf Decay] (FastLeafDecay-1.7.10-1.4.jar) 
+	UCHIJAAAA	gravestone{0.7.10.3} [Gravestone] (GraveStone Mod 0.7.10.3.jar) 
+	UCHIJAAAA	hbm{1.0.27 BETA (5012)} [Hbm's Nuclear Tech] (HBM-NTM-.1.0.27_X5012.jar) 
+	UCHIJAAAA	iChunUtil{4.2.3} [iChunUtil] (iChunUtil-4.2.3.jar) 
+	UCHIJAAAA	MobDismemberment{4.0.0} [MobDismemberment] (MobDismemberment-4.0.0.jar) 
+	UCHIJAAAA	MouseTweaks{2.4.4} [Mouse Tweaks] (MouseTweaks-2.4.4-mc1.7.10.jar) 
+	UCHIJAAAA	harvestcraft{1.7.10j} [Pam's HarvestCraft] (Pam's HarvestCraft 1.7.10Lb.jar) 
+	UCHIJAAAA	worldedit{6.1.1} [WorldEdit] (worldedit-forge-mc1.7.10-6.1.1-dist.jar) 
+	GL info: ~~ERROR~~ RuntimeException: No OpenGL context found in the current thread.
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Player Count: 1 / 8; [EntityPlayerMP['Mega_Steve01'/2686, l='New World', x=100.00, y=49.00, z=0.00]]
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'fml,forge'

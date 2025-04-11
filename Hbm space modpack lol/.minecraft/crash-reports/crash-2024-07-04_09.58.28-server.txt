@@ -1,0 +1,119 @@
+---- Minecraft Crash Report ----
+// Don't do that.
+
+Time: 7/4/24 9:58 AM
+Description: Exception getting block type in world
+
+java.lang.NullPointerException: Exception getting block type in world
+	at net.minecraft.world.World.func_147439_a(World.java:346)
+	at net.minecraft.world.World.func_147460_e(World.java:693)
+	at net.minecraft.world.World.func_147459_d(World.java:653)
+	at net.minecraft.world.World.func_147444_c(World.java:613)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:488)
+	at net.minecraft.world.World.func_147465_d(World.java:466)
+	at net.minecraft.world.World.func_147468_f(World.java:573)
+	at com.hbm.blocks.gas.BlockGasBase.tryMove(BlockGasBase.java:120)
+	at com.hbm.blocks.gas.BlockGasBase.func_149674_a(BlockGasBase.java:105)
+	at com.hbm.blocks.gas.BlockGasAsbestos.func_149674_a(BlockGasAsbestos.java:65)
+	at net.minecraft.world.WorldServer.func_72955_a(WorldServer.java:550)
+	at net.minecraft.world.WorldServer.func_72835_b(WorldServer.java:181)
+	at net.minecraft.server.MinecraftServer.func_71190_q(MinecraftServer.java:625)
+	at net.minecraft.server.MinecraftServer.func_71217_p(MinecraftServer.java:547)
+	at net.minecraft.server.integrated.IntegratedServer.func_71217_p(IntegratedServer.java:111)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:427)
+	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:685)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at net.minecraft.world.World.func_147439_a(World.java:346)
+
+-- Requested block coordinates --
+Details:
+	Found chunk: true
+	Location: World: (84,26,336), Chunk: (at 4,1,0 in 5,21; contains blocks 80,0,336 to 95,255,351), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+Stacktrace:
+	at net.minecraft.world.World.func_147439_a(World.java:346)
+	at net.minecraft.world.World.func_147460_e(World.java:693)
+	at net.minecraft.world.World.func_147459_d(World.java:653)
+	at net.minecraft.world.World.func_147444_c(World.java:613)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:488)
+	at net.minecraft.world.World.func_147465_d(World.java:466)
+	at net.minecraft.world.World.func_147468_f(World.java:573)
+	at com.hbm.blocks.gas.BlockGasBase.tryMove(BlockGasBase.java:120)
+	at com.hbm.blocks.gas.BlockGasBase.func_149674_a(BlockGasBase.java:105)
+	at com.hbm.blocks.gas.BlockGasAsbestos.func_149674_a(BlockGasAsbestos.java:65)
+
+-- Block being ticked --
+Details:
+	Block type: ID #1397 (tile.gas_asbestos // com.hbm.blocks.gas.BlockGasAsbestos)
+	Block data value: 0 / 0x0 / 0b0000
+	Block location: World: (84,26,335), Chunk: (at 4,1,15 in 5,20; contains blocks 80,0,320 to 95,255,335), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+Stacktrace:
+	at net.minecraft.world.WorldServer.func_72955_a(WorldServer.java:550)
+	at net.minecraft.world.WorldServer.func_72835_b(WorldServer.java:181)
+
+-- Affected level --
+Details:
+	Level name: New World
+	All players: 1 total; [EntityPlayerMP['Mega_Steve01'/2728, l='New World', x=110.07, y=78.00, z=143.19]]
+	Chunk stats: ServerChunkCache: 682 Drop: 0
+	Level seed: 1426036417418498044
+	Level generator: ID 00 - default, ver 1. Features enabled: true
+	Level generator options: 
+	Level spawn location: World: (116,64,160), Chunk: (at 4,4,0 in 7,10; contains blocks 112,0,160 to 127,255,175), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 350 game time, 350 day time
+	Level dimension: 0
+	Level storage version: 0x04ABD - Anvil
+	Level weather: Rain time: 25904 (now: false), thunder time: 45867 (now: false)
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Cheats: false
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.func_71190_q(MinecraftServer.java:625)
+	at net.minecraft.server.MinecraftServer.func_71217_p(MinecraftServer.java:547)
+	at net.minecraft.server.integrated.IntegratedServer.func_71217_p(IntegratedServer.java:111)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:427)
+	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:685)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 1.8.0_411, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 222018416 bytes (211 MB) / 2177368064 bytes (2076 MB) up to 4772593664 bytes (4551 MB)
+	JVM Flags: 3 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xms512m -Xmx5120m
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 13, tallocated: 95
+	FML: MCP v9.05 FML v7.10.99.99 Minecraft Forge 10.13.4.1614 22 mods loaded, 22 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJAAAA	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJAAAA	FML{7.10.99.99} [Forge Mod Loader] (forge-1.7.10-10.13.4.1614-1.7.10-universal.jar) 
+	UCHIJAAAA	Forge{10.13.4.1614} [Minecraft Forge] (forge-1.7.10-10.13.4.1614-1.7.10-universal.jar) 
+	UCHIJAAAA	AdvancedRocketryCore{1} [Advanced Rocketry] (minecraft.jar) 
+	UCHIJAAAA	CodeChickenCore{1.0.7.48} [CodeChicken Core] (minecraft.jar) 
+	UCHIJAAAA	NotEnoughItems{1.0.5.120} [Not Enough Items] (NotEnoughItems-1.7.10-1.0.5.120-universal.jar) 
+	UCHIJAAAA	libVulpes{0.2.8.-37} [libVulpes] (LibVulpes-1.7.10-0.2.8-37-universal.jar) 
+	UCHIJAAAA	advancedRocketry{1.4.0-32} [Advanced Rocketry] (AdvancedRocketry-1.7.10-1.4.0-32.jar) 
+	UCHIJAAAA	Apocalypse{0.0.7} [§cApocalypse§r] (Apocalypse-1.7.10-0.0.7.jar) 
+	UCHIJAAAA	chocolateQuest{1.0} [Chocolate Quest] (chocolateQuest-1.7.10-1.1d.jar) 
+	UCHIJAAAA	cookingbook{1.0.140} [Cooking for Blockheads] (cookingbook-mc1.7.10-1.0.140.jar) 
+	UCHIJAAAA	MineTweaker3{3.1.0} [MineTweaker 3] (CraftTweaker-1.7.10-3.1.0-legacy.jar) 
+	UCHIJAAAA	CustomSpawner{3.3.0} [DrZhark's CustomSpawner] (CustomMobSpawner 3.3.0.zip) 
+	UCHIJAAAA	MoCreatures{6.3.1} [DrZhark's Mo'Creatures Mod] (DrZharks MoCreatures Mod v6.3.1.zip) 
+	UCHIJAAAA	dsurround{1.0.6.4} [Dynamic Surroundings] (DynamicSurroundings-1.7.10-1.0.6.4.jar) 
+	UCHIJAAAA	fastleafdecay{1.4} [Fast Leaf Decay] (FastLeafDecay-1.7.10-1.4.jar) 
+	UCHIJAAAA	gravestone{0.7.10.3} [Gravestone] (GraveStone Mod 0.7.10.3.jar) 
+	UCHIJAAAA	hbm{1.0.27 BETA (5012)} [Hbm's Nuclear Tech] (HBM-NTM-.1.0.27_X5012.jar) 
+	UCHIJAAAA	iChunUtil{4.2.3} [iChunUtil] (iChunUtil-4.2.3.jar) 
+	UCHIJAAAA	MobDismemberment{4.0.0} [MobDismemberment] (MobDismemberment-4.0.0.jar) 
+	UCHIJAAAA	MouseTweaks{2.4.4} [Mouse Tweaks] (MouseTweaks-2.4.4-mc1.7.10.jar) 
+	UCHIJAAAA	harvestcraft{1.7.10j} [Pam's HarvestCraft] (Pam's HarvestCraft 1.7.10Lb.jar) 
+	GL info: ~~ERROR~~ RuntimeException: No OpenGL context found in the current thread.
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Player Count: 1 / 8; [EntityPlayerMP['Mega_Steve01'/2728, l='New World', x=110.07, y=78.00, z=143.19]]
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'fml,forge'

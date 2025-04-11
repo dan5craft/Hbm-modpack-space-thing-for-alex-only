@@ -1,0 +1,132 @@
+[16:14:27] [main/INFO]: Setting user: Mega_Steve01
+[16:14:28] [Client thread/INFO]: LWJGL Version: 2.9.4
+[16:14:32] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:ChickenChunks, FMLFileResourcePack:Fast Leaf Decay, FMLFileResourcePack:Gravestone, FMLFileResourcePack:NTM: Space, FMLFileResourcePack:Inventory Tweaks, FMLFileResourcePack:Mouse Tweaks, FMLFileResourcePack:WorldEdit
+[16:14:37] [Client thread/WARN]: File hbm:sounds/clap.ogg does not exist, cannot add it to event hbm:fm.clap
+[16:14:37] [Client thread/WARN]: File hbm:sounds/mug.ogg does not exist, cannot add it to event hbm:fm.mug
+[16:14:37] [Client thread/WARN]: File hbm:sounds/sample.ogg does not exist, cannot add it to event hbm:fm.sample
+[16:14:37] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[16:14:37] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[16:14:37] [Sound Library Loader/INFO]: Sound engine started
+[16:14:38] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:ChickenChunks, FMLFileResourcePack:Fast Leaf Decay, FMLFileResourcePack:Gravestone, FMLFileResourcePack:NTM: Space, FMLFileResourcePack:Inventory Tweaks, FMLFileResourcePack:Mouse Tweaks, FMLFileResourcePack:WorldEdit
+[16:14:38] [Client thread/ERROR]: Using missing texture, unable to load hbm:textures/blocks/nuke_antimatter.png, java.io.FileNotFoundException
+[16:14:38] [Client thread/INFO]: textures/blocks: dropping miplevel from 4 to 3, because of minTexel: 8
+[16:14:38] [Client thread/INFO]: Created: 1024x1024 textures/blocks-atlas
+[16:14:38] [Client thread/ERROR]: Using missing texture, unable to load hbm:textures/items/singularity_micro.png, java.io.FileNotFoundException
+[16:14:38] [Client thread/ERROR]: Using missing texture, unable to load hbm:textures/items/redstone_depleted.png, java.io.FileNotFoundException
+[16:14:38] [Client thread/ERROR]: Using missing texture, unable to load hbm:textures/items/euphemium_stopper.png, java.io.FileNotFoundException
+[16:14:39] [Client thread/INFO]: Created: 2048x1024 textures/items-atlas
+[16:14:39] [Client thread/WARN]: File hbm:sounds/clap.ogg does not exist, cannot add it to event hbm:fm.clap
+[16:14:39] [Client thread/WARN]: File hbm:sounds/mug.ogg does not exist, cannot add it to event hbm:fm.mug
+[16:14:39] [Client thread/WARN]: File hbm:sounds/sample.ogg does not exist, cannot add it to event hbm:fm.sample
+[16:14:40] [Sound Library Loader/INFO]: Sound engine started
+[16:14:44] [Client thread/INFO]: Connecting to 212.10.110.190, 25565
+[16:14:45] [Client thread/INFO]: [CHAT] Loaded world with JameH2's NTM: Space 1.0.27 BETA (5287) for Minecraft 1.7.10!
+[16:15:44] [Client thread/INFO]: Connecting to 212.10.110.190, 25565
+[16:15:46] [Client thread/INFO]: [CHAT] Loaded world with JameH2's NTM: Space 1.0.27 BETA (5287) for Minecraft 1.7.10!
+[16:17:23] [Client thread/INFO]: [CHAT] <THE_abemad> remingitis
+[16:40:13] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:step.anvil
+[16:40:13] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:step.anvil
+[16:40:13] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:step.anvil
+[16:40:13] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:step.anvil
+[16:48:12] [Client thread/INFO]: [CHAT] Conveyor built!
+[17:24:34] [Client thread/INFO]: [CHAT] THE_abemad joined the game
+[17:24:42] [Client thread/INFO]: [CHAT] [THE_abemad: Kicked THE_abemad from the game]
+[17:24:44] [Client thread/INFO]: [CHAT] [THE_abemad: Kicked THE_abemad from the game]
+[17:24:44] [Client thread/INFO]: [CHAT] [THE_abemad: Kicked THE_abemad from the game]
+[17:24:44] [Client thread/INFO]: [CHAT] [THE_abemad: Kicked THE_abemad from the game]
+[17:24:46] [Client thread/INFO]: [CHAT] THE_abemad left the game
+[17:25:37] [Client thread/INFO]: [CHAT] Mega_Steve01 has just earned the achievement [Bismuth]
+[17:56:21] [Client thread/INFO]: Connecting to 212.10.110.190, 25565
+[17:56:22] [Client thread/INFO]: [CHAT] Loaded world with JameH2's NTM: Space 1.0.27 BETA (5287) for Minecraft 1.7.10!
+[17:56:31] [Client thread/INFO]: [CHAT] THE_abemad joined the game
+[17:56:45] [Client thread/INFO]: [CHAT] THE_abemad left the game
+[18:00:07] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[18:00:07] [Server thread/INFO]: Generating keypair
+[18:00:07] [Server thread/INFO]: Converting map!
+[18:00:07] [Server thread/INFO]: Scanning folders...
+[18:00:07] [Server thread/INFO]: Total conversion count is 0
+[18:00:07] [Server thread/INFO]: Preparing start region for level 0
+[18:00:08] [Server thread/INFO]: Changing view distance to 12, from 10
+[18:00:08] [Server thread/INFO]: Mega_Steve01[local:E:ebf45507] logged in with entity id 2148640 at (-268.5, 4.0, -319.5)
+[18:00:08] [Server thread/INFO]: Mega_Steve01 joined the game
+[18:00:08] [Client thread/INFO]: [CHAT] Loaded world with JameH2's NTM: Space 1.0.27 BETA (5287) for Minecraft 1.7.10!
+[18:00:09] [Server thread/INFO]: Mega_Steve01 has just earned the achievement [Taking Inventory]
+[18:00:09] [Client thread/INFO]: [CHAT] Mega_Steve01 has just earned the achievement [Taking Inventory]
+[18:00:57] [Client thread/INFO]: [CHAT] Changed type to Reformate!
+[18:01:41] [Server thread/INFO]: Saving and pausing game...
+[18:01:41] [Server thread/INFO]: Saving chunks for level 'New World'/Earth
+[18:01:42] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[18:06:15] [Server thread/INFO]: [Mega_Steve01: Given [Reformate] * 64 to Mega_Steve01]
+[18:06:15] [Client thread/INFO]: [CHAT] Given [Reformate] * 64 to Mega_Steve01
+[18:07:54] [Server thread/INFO]: [Mega_Steve01: Given [Cobalt Reaction Catalyst] * 1 to Mega_Steve01]
+[18:07:54] [Client thread/INFO]: [CHAT] Given [Cobalt Reaction Catalyst] * 1 to Mega_Steve01
+[18:08:36] [Client thread/INFO]: [CHAT] Changed type to Reformate!
+[18:08:37] [Client thread/INFO]: [CHAT] Changed type to Unsaturated Hydrocarbons!
+[18:08:47] [Client thread/INFO]: [CHAT] Changed type to Reformate Gas!
+[18:11:00] [Server thread/INFO]: Saving and pausing game...
+[18:11:00] [Server thread/INFO]: Saving chunks for level 'New World'/Earth
+[18:11:00] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[18:11:00] [Server thread/INFO]: Stopping server
+[18:11:00] [Server thread/INFO]: Saving players
+[18:11:00] [Server thread/INFO]: Saving worlds
+[18:11:00] [Server thread/INFO]: Saving chunks for level 'New World'/Earth
+[18:11:00] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[18:11:02] [Client thread/INFO]: Connecting to 212.10.110.190, 25565
+[18:11:03] [Client thread/INFO]: [CHAT] Loaded world with JameH2's NTM: Space 1.0.27 BETA (5287) for Minecraft 1.7.10!
+[18:13:36] [Client thread/INFO]: [CHAT] Changed type to Reformate!
+[18:13:47] [Client thread/INFO]: [CHAT] Changed type to Aromatic Hydrocarbons!
+[18:13:54] [Client thread/INFO]: [CHAT] Changed type to Liquid Hydrogen!
+[18:19:07] [Client thread/INFO]: [CHAT] Mega_Steve01 has just earned the achievement [Enchanter]
+[18:19:35] [Client thread/INFO]: [CHAT] Mega_Steve01 has just earned the achievement [Overkill]
+[18:36:33] [Client thread/INFO]: Connecting to 212.10.110.190, 25565
+[18:36:35] [Client thread/INFO]: [CHAT] Loaded world with JameH2's NTM: Space 1.0.27 BETA (5287) for Minecraft 1.7.10!
+[19:02:02] [Client thread/INFO]: [CHAT] THE_abemad left the game
+[19:02:09] [Client thread/INFO]: [CHAT] THE_abemad joined the game
+[19:03:23] [Client thread/INFO]: [CHAT] Saved screenshot as 2025-04-10_19.03.22.png
+[19:04:10] [Client thread/INFO]: Connecting to 212.10.110.190, 25565
+[19:04:11] [Client thread/INFO]: [CHAT] Loaded world with JameH2's NTM: Space 1.0.27 BETA (5287) for Minecraft 1.7.10!
+[19:13:28] [Client thread/INFO]: [CHAT] You whisper to THE_abemad: tag dem
+[19:22:17] [Client thread/INFO]: [CHAT] <THE_abemad> kæmpe nørd
+[19:40:00] [Client thread/INFO]: [CHAT] THE_abemad joined the game
+[19:40:16] [Client thread/INFO]: [CHAT] THE_abemad left the game
+[19:40:19] [Client thread/INFO]: [CHAT] THE_abemad left the game
+[19:40:23] [Client thread/INFO]: [CHAT] THE_abemad joined the game
+[19:46:47] [Client thread/INFO]: Connecting to 212.10.110.190, 25565
+[19:46:48] [Client thread/INFO]: [CHAT] Loaded world with JameH2's NTM: Space 1.0.27 BETA (5287) for Minecraft 1.7.10!
+[21:46:35] [Client thread/INFO]: [CHAT] THE_abemad joined the game
+[21:46:39] [Client thread/INFO]: [CHAT] [THE_abemad: Kicked THE_abemad from the game]
+[21:46:48] [Client thread/INFO]: [CHAT] [THE_abemad: Kicked THE_abemad from the game]
+[21:46:49] [Client thread/INFO]: [CHAT] [THE_abemad: Kicked THE_abemad from the game]
+[21:46:49] [Client thread/INFO]: [CHAT] [THE_abemad: Kicked THE_abemad from the game]
+[21:46:49] [Client thread/INFO]: [CHAT] THE_abemad left the game
+[21:47:11] [Client thread/INFO]: [CHAT] THE_abemad left the game
+[21:54:19] [Client thread/INFO]: [CHAT] Stopping the server
+[21:55:12] [Client thread/INFO]: Connecting to 212.10.110.190, 25565
+[21:55:20] [Client thread/INFO]: [CHAT] Loaded world with JameH2's NTM: Space 1.0.27 BETA (5287) for Minecraft 1.7.10!
+[22:43:22] [Client thread/WARN]: Null returned as 'hitResult', this shouldn't happen!
+[23:02:19] [Client thread/ERROR]: Null returned as 'hitResult', this shouldn't happen!
+[23:02:20] [Client thread/ERROR]: Null returned as 'hitResult', this shouldn't happen!
+[23:02:20] [Client thread/ERROR]: Null returned as 'hitResult', this shouldn't happen!
+[23:02:20] [Client thread/ERROR]: Null returned as 'hitResult', this shouldn't happen!
+[23:02:20] [Client thread/ERROR]: Null returned as 'hitResult', this shouldn't happen!
+[23:02:21] [Client thread/ERROR]: Null returned as 'hitResult', this shouldn't happen!
+[23:02:21] [Client thread/ERROR]: Null returned as 'hitResult', this shouldn't happen!
+[23:02:21] [Client thread/ERROR]: Null returned as 'hitResult', this shouldn't happen!
+[23:02:21] [Client thread/ERROR]: Null returned as 'hitResult', this shouldn't happen!
+[23:02:21] [Client thread/WARN]: Null returned as 'hitResult', this shouldn't happen!
+[23:02:22] [Client thread/ERROR]: Null returned as 'hitResult', this shouldn't happen!
+[23:02:22] [Client thread/ERROR]: Null returned as 'hitResult', this shouldn't happen!
+[23:02:22] [Client thread/ERROR]: Null returned as 'hitResult', this shouldn't happen!
+[23:02:22] [Client thread/ERROR]: Null returned as 'hitResult', this shouldn't happen!
+[23:02:23] [Client thread/ERROR]: Null returned as 'hitResult', this shouldn't happen!
+[23:02:23] [Client thread/ERROR]: Null returned as 'hitResult', this shouldn't happen!
+[23:02:23] [Client thread/ERROR]: Null returned as 'hitResult', this shouldn't happen!
+[23:02:24] [Client thread/ERROR]: Null returned as 'hitResult', this shouldn't happen!
+[23:02:24] [Client thread/ERROR]: Null returned as 'hitResult', this shouldn't happen!
+[23:02:24] [Client thread/ERROR]: Null returned as 'hitResult', this shouldn't happen!
+[23:02:25] [Client thread/ERROR]: Null returned as 'hitResult', this shouldn't happen!
+[23:02:25] [Client thread/ERROR]: Null returned as 'hitResult', this shouldn't happen!
+[23:02:25] [Client thread/ERROR]: Null returned as 'hitResult', this shouldn't happen!
+[23:02:26] [Client thread/ERROR]: Null returned as 'hitResult', this shouldn't happen!
+[23:02:26] [Client thread/ERROR]: Null returned as 'hitResult', this shouldn't happen!
+[23:13:45] [Client thread/INFO]: Stopping!

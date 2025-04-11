@@ -1,0 +1,147 @@
+---- Minecraft Crash Report ----
+// Don't be sad, have a hug! <3
+
+Time: 8/13/24 7:32 PM
+Description: Updating screen events
+
+java.lang.NullPointerException: Updating screen events
+	at net.minecraftforge.fluids.FluidRegistry.getFluidID(FluidRegistry.java:199)
+	at zmaster587.libVulpes.recipe.RecipesMachine$Recipe.getRecipeAsAllItemsOnly(RecipesMachine.java:134)
+	at zmaster587.advancedRocketry.integration.nei.TemplateNEI.loadUsageRecipes(TemplateNEI.java:184)
+	at codechicken.nei.recipe.TemplateRecipeHandler.loadUsageRecipes(TemplateRecipeHandler.java:350)
+	at codechicken.nei.recipe.TemplateRecipeHandler.getUsageHandler(TemplateRecipeHandler.java:472)
+	at codechicken.nei.recipe.GuiUsageRecipe.openRecipeGui(GuiUsageRecipe.java:20)
+	at codechicken.nei.recipe.RecipeItemInputHandler.lastKeyTyped(RecipeItemInputHandler.java:20)
+	at codechicken.nei.guihook.GuiContainerManager.lastKeyTyped(GuiContainerManager.java:307)
+	at net.minecraft.client.gui.inventory.GuiContainer.func_73869_a(GuiContainer.java)
+	at net.minecraft.client.gui.inventory.GuiContainerCreative.func_73869_a(GuiContainerCreative.java:301)
+	at net.minecraft.client.gui.inventory.GuiContainer.public_func_73869_a(GuiContainer.java)
+	at codechicken.nei.guihook.GuiContainerManager.callKeyTyped(GuiContainerManager.java)
+	at codechicken.nei.guihook.GuiContainerManager.keyTyped(GuiContainerManager.java:475)
+	at codechicken.nei.guihook.GuiContainerManager.handleKeyboardInput(GuiContainerManager.java:465)
+	at net.minecraft.client.gui.inventory.GuiContainer.func_146282_l(GuiContainer.java)
+	at net.minecraft.client.gui.GuiScreen.func_146269_k(GuiScreen.java:276)
+	at net.minecraft.client.Minecraft.func_71407_l(Minecraft.java:1640)
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:973)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:898)
+	at net.minecraft.client.main.Main.main(SourceFile:148)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at org.prismlauncher.launcher.impl.StandardLauncher.launch(StandardLauncher.java:87)
+	at org.prismlauncher.EntryPoint.listen(EntryPoint.java:129)
+	at org.prismlauncher.EntryPoint.main(EntryPoint.java:70)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at net.minecraftforge.fluids.FluidRegistry.getFluidID(FluidRegistry.java:199)
+	at zmaster587.libVulpes.recipe.RecipesMachine$Recipe.getRecipeAsAllItemsOnly(RecipesMachine.java:134)
+	at zmaster587.advancedRocketry.integration.nei.TemplateNEI.loadUsageRecipes(TemplateNEI.java:184)
+	at codechicken.nei.recipe.TemplateRecipeHandler.loadUsageRecipes(TemplateRecipeHandler.java:350)
+	at codechicken.nei.recipe.TemplateRecipeHandler.getUsageHandler(TemplateRecipeHandler.java:472)
+	at codechicken.nei.recipe.GuiUsageRecipe.openRecipeGui(GuiUsageRecipe.java:20)
+	at codechicken.nei.recipe.RecipeItemInputHandler.lastKeyTyped(RecipeItemInputHandler.java:20)
+	at codechicken.nei.guihook.GuiContainerManager.lastKeyTyped(GuiContainerManager.java:307)
+	at net.minecraft.client.gui.inventory.GuiContainer.func_73869_a(GuiContainer.java)
+	at net.minecraft.client.gui.inventory.GuiContainerCreative.func_73869_a(GuiContainerCreative.java:301)
+	at net.minecraft.client.gui.inventory.GuiContainer.public_func_73869_a(GuiContainer.java)
+	at codechicken.nei.guihook.GuiContainerManager.callKeyTyped(GuiContainerManager.java)
+	at codechicken.nei.guihook.GuiContainerManager.keyTyped(GuiContainerManager.java:475)
+	at codechicken.nei.guihook.GuiContainerManager.handleKeyboardInput(GuiContainerManager.java:465)
+	at net.minecraft.client.gui.inventory.GuiContainer.func_146282_l(GuiContainer.java)
+	at net.minecraft.client.gui.GuiScreen.func_146269_k(GuiScreen.java:276)
+
+-- Affected screen --
+Details:
+	Screen name: net.minecraft.client.gui.inventory.GuiContainerCreative
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 2 total; [EntityClientPlayerMP['Mega_Steve01'/2976, l='MpServer', x=-449.91, y=62.62, z=448.26], EntityOtherPlayerMP['THE_abemad'/7475, l='MpServer', x=-449.41, y=60.48, z=447.19]]
+	Chunk stats: MultiplayerChunkCache: 1089, 1089
+	Level seed: 0
+	Level generator: ID 00 - default, ver 1. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (-164,64,248), Chunk: (at 12,4,8 in -11,15; contains blocks -176,0,240 to -161,255,255), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+	Level time: 337252 game time, 337252 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 161 total; [EntityCow['Cow'/3072, l='MpServer', x=-378.72, y=65.00, z=438.50], EntitySlime['Slime'/3074, l='MpServer', x=-388.63, y=66.00, z=491.38], EntityZombie['Zombie'/355335, l='MpServer', x=45.91, y=-38.62, z=17.74], MoCEntityTurkey['Turkey'/3075, l='MpServer', x=-455.28, y=65.00, z=518.56], EntityChicken['Chicken'/3076, l='MpServer', x=-470.47, y=66.00, z=515.53], MoCEntityMiniGolem['MiniGolem'/8197, l='MpServer', x=-534.50, y=22.00, z=508.50], EntitySheep['Sheep'/3080, l='MpServer', x=-523.50, y=72.00, z=459.22], EntityCreeper['Creeper'/7944, l='MpServer', x=-382.31, y=45.00, z=459.00], EntityCreeper['Creeper'/7945, l='MpServer', x=-384.50, y=45.00, z=458.50], EntitySheep['Sheep'/3081, l='MpServer', x=-533.03, y=72.00, z=457.94], EntityCreeper['Creeper'/7946, l='MpServer', x=-384.47, y=45.00, z=462.06], EntitySheep['Sheep'/3082, l='MpServer', x=-533.50, y=73.00, z=455.34], MoCEntityMole['Mole'/3083, l='MpServer', x=-550.69, y=70.19, z=469.88], EntityCreeper['Creeper'/7947, l='MpServer', x=-379.50, y=45.00, z=456.50], MoCEntityMole['Mole'/3084, l='MpServer', x=-540.91, y=72.00, z=456.53], MoCEntitySnake['Snake'/3085, l='MpServer', x=-539.56, y=71.00, z=428.38], EntityChicken['Chicken'/3086, l='MpServer', x=-531.41, y=70.00, z=416.34], EntityCreeper['Creeper'/4373, l='MpServer', x=-432.88, y=64.00, z=424.72], EntitySkeleton['Skeleton'/7448, l='MpServer', x=-382.50, y=19.00, z=441.50], EntitySkeleton['Skeleton'/7449, l='MpServer', x=-380.50, y=19.00, z=441.50], MoCEntityMouse['Mouse'/3099, l='MpServer', x=-371.47, y=66.00, z=467.19], MoCEntityTurkey['Turkey'/3100, l='MpServer', x=-519.50, y=68.00, z=509.84], EntityChicken['Chicken'/3101, l='MpServer', x=-520.63, y=69.00, z=498.59], MoCEntitySnake['Snake'/3103, l='MpServer', x=-514.47, y=63.00, z=375.94], MoCEntityAnt['Ant'/2079, l='MpServer', x=-351.47, y=67.00, z=354.47], MoCEntityGoat['Goat'/2081, l='MpServer', x=-351.81, y=67.00, z=361.75], MoCEntityGoat['Goat'/2086, l='MpServer', x=-346.28, y=62.17, z=420.16], MoCEntitySnake['Snake'/3111, l='MpServer', x=-533.59, y=69.00, z=494.44], MoCEntitySnake['Snake'/3112, l='MpServer', x=-545.94, y=70.00, z=500.81], MoCEntityGoat['Goat'/2088, l='MpServer', x=-344.03, y=71.00, z=447.06], EntityCreeper['Creeper'/7208, l='MpServer', x=-413.50, y=58.00, z=424.50], EntityOtherPlayerMP['THE_abemad'/7475, l='MpServer', x=-449.41, y=60.48, z=447.19], MoCEntityFirefly['Firefly'/3118, l='MpServer', x=-549.19, y=77.00, z=447.59], MoCEntityDuck['Duck'/3121, l='MpServer', x=-480.28, y=64.00, z=531.81], EntityZombie['Zombie'/5169, l='MpServer', x=-433.38, y=46.00, z=444.34], EntityOtherPlayerMP['THE_abemad'/7475, l='MpServer', x=-449.41, y=60.48, z=447.19], EntityTrail['unknown'/363824, l='MpServer', x=-449.41, y=60.48, z=447.19], MoCEntityGoat['Goat'/3126, l='MpServer', x=-370.53, y=67.00, z=458.16], MoCEntityMouse['Mouse'/3382, l='MpServer', x=-351.81, y=65.00, z=574.69], MoCEntityGoat['Goat'/3127, l='MpServer', x=-352.06, y=70.00, z=456.34], MoCEntityTurkey['Turkey'/3128, l='MpServer', x=-488.25, y=65.00, z=532.91], EntityZombie['Zombie'/7224, l='MpServer', x=-530.50, y=41.00, z=441.50], MoCEntityMouse['Mouse'/3132, l='MpServer', x=-423.25, y=66.00, z=342.47], MoCEntityMouse['Mouse'/3134, l='MpServer', x=-421.34, y=59.00, z=532.56], EntitySpider['Spider'/4159, l='MpServer', x=-456.22, y=64.00, z=432.97], MoCEntityFirefly['Firefly'/3136, l='MpServer', x=-540.84, y=75.00, z=503.63], EntitySpider['Spider'/4161, l='MpServer', x=-445.00, y=63.00, z=419.22], MoCEntitySilverSkeleton['SilverSkeleton'/8259, l='MpServer', x=-421.72, y=42.00, z=557.47], MoCEntityMouse['Mouse'/2116, l='MpServer', x=-333.25, y=70.00, z=321.59], MoCEntityRaccoon['Raccoon'/3141, l='MpServer', x=-376.44, y=63.00, z=372.44], MoCEntityGoat['Goat'/2117, l='MpServer', x=-334.72, y=68.00, z=343.13], MoCEntityGoat['Goat'/3142, l='MpServer', x=-381.25, y=63.00, z=385.28], MoCEntitySnake['Snake'/3143, l='MpServer', x=-555.06, y=70.00, z=488.63], EntityZombie['Zombie'/7239, l='MpServer', x=-389.88, y=46.00, z=438.56], MoCEntityFox['Fox'/2120, l='MpServer', x=-333.50, y=65.00, z=357.91], MoCEntityHorse['WildHorse'/2121, l='MpServer', x=-329.41, y=66.00, z=366.25], EntitySquid['Squid'/5449, l='MpServer', x=-393.44, y=58.28, z=450.50], EntitySquid['Squid'/5451, l='MpServer', x=-402.31, y=58.38, z=449.41], EntityZombie['Zombie'/6989, l='MpServer', x=-526.50, y=50.00, z=412.50], MoCEntityScorpion['Scorpion'/7758, l='MpServer', x=-528.72, y=47.00, z=479.72], EntityZombie['Zombie'/6990, l='MpServer', x=-531.50, y=50.00, z=413.50], MoCEntityTurkey['Turkey'/3151, l='MpServer', x=-397.59, y=67.00, z=541.81], EntityZombie['Zombie'/7759, l='MpServer', x=-439.50, y=17.00, z=505.50], EntityZombie['Zombie'/6991, l='MpServer', x=-530.66, y=50.00, z=413.34], MoCEntityBird['Bird'/3153, l='MpServer', x=-569.22, y=71.00, z=455.22], MoCEntityBird['Bird'/3154, l='MpServer', x=-567.88, y=72.00, z=446.22], MoCEntityBird['Bird'/3155, l='MpServer', x=-568.22, y=72.00, z=445.22], MoCEntityBird['Bird'/3156, l='MpServer', x=-570.28, y=72.00, z=444.91], MoCEntityBird['Bird'/3157, l='MpServer', x=-572.09, y=72.00, z=449.91], MoCEntityRaccoon['Raccoon'/3418, l='MpServer', x=-331.47, y=62.48, z=575.69], MoCEntityBird['Bird'/3164, l='MpServer', x=-567.91, y=75.96, z=447.22], MoCEntityMouse['Mouse'/3171, l='MpServer', x=-391.41, y=64.00, z=366.53], EntityZombie['Zombie'/8302, l='MpServer', x=-403.50, y=45.00, z=436.50], EntityCreeper['Creeper'/6769, l='MpServer', x=-517.50, y=36.00, z=370.50], MoCEntityFirefly['Firefly'/3185, l='MpServer', x=-572.34, y=72.00, z=411.78], MoCEntityGoat['Goat'/3186, l='MpServer', x=-420.44, y=70.00, z=321.72], MoCEntityMouse['Mouse'/3187, l='MpServer', x=-427.63, y=61.00, z=561.53], MoCEntityBear['Bear'/3188, l='MpServer', x=-424.81, y=64.00, z=539.69], EntityZombie['Zombie'/8311, l='MpServer', x=-404.50, y=26.00, z=432.50], MoCEntityElephant['Elephant'/3197, l='MpServer', x=-537.31, y=70.00, z=529.81], EntityZombie['Zombie'/6526, l='MpServer', x=-431.03, y=50.00, z=475.31], MoCEntityDeer['Deer'/3199, l='MpServer', x=-549.53, y=69.00, z=512.53], EntityZombie['Zombie'/6527, l='MpServer', x=-432.56, y=50.00, z=476.66], EntityCreeper['Creeper'/6528, l='MpServer', x=-430.31, y=50.00, z=476.28], MoCEntityMouse['Mouse'/3204, l='MpServer', x=-376.44, y=64.00, z=344.75], MoCEntityMouse['Mouse'/3205, l='MpServer', x=-365.31, y=62.53, z=516.94], MoCEntityTurkey['Turkey'/3206, l='MpServer', x=-369.31, y=62.39, z=541.44], EntityCreeper['Creeper'/6792, l='MpServer', x=-407.50, y=24.00, z=461.50], EntityCreeper['Creeper'/6793, l='MpServer', x=-406.50, y=24.00, z=462.50], MoCEntityTurkey['Turkey'/3210, l='MpServer', x=-470.16, y=63.00, z=568.56], MoCEntityMouse['Mouse'/3211, l='MpServer', x=-472.56, y=63.00, z=556.72], MoCEntityBird['Bird'/3212, l='MpServer', x=-514.56, y=63.00, z=555.34], MoCEntityBird['Bird'/3216, l='MpServer', x=-565.78, y=72.00, z=376.34], MoCEntityBear['Bear'/3222, l='MpServer', x=-436.84, y=65.00, z=567.84], MoCEntityWerewolf['Werewolf'/7576, l='MpServer', x=-560.75, y=36.00, z=437.28], MoCEntityOgre['Ogre'/7837, l='MpServer', x=-347.25, y=29.00, z=433.06], EntityZombie['Zombie'/8350, l='MpServer', x=-529.50, y=35.00, z=399.50], MoCEntityMouse['Mouse'/3232, l='MpServer', x=-356.38, y=66.00, z=540.56], MoCEntityMiniGolem['MiniGolem'/2981, l='MpServer', x=-426.06, y=56.00, z=431.59], EntitySkeleton['Skeleton'/2982, l='MpServer', x=-447.72, y=58.00, z=458.28], EntitySkeleton['Skeleton'/2983, l='MpServer', x=-451.59, y=58.00, z=464.01], EntityCreeper['Creeper'/2985, l='MpServer', x=-441.59, y=43.00, z=450.97], EntitySkeleton['Skeleton'/4265, l='MpServer', x=-476.94, y=69.00, z=461.44], EntitySkeleton['Skeleton'/7337, l='MpServer', x=-532.50, y=17.00, z=439.50], EntitySpider['Spider'/4778, l='MpServer', x=-533.41, y=50.00, z=409.94], EntitySkeleton['Skeleton'/2987, l='MpServer', x=-435.65, y=46.00, z=444.72], EntityChicken['Chicken'/2988, l='MpServer', x=-486.38, y=69.00, z=474.56], MoCEntityMouse['Mouse'/3244, l='MpServer', x=-358.16, y=62.69, z=504.78], EntityCow['Cow'/2989, l='MpServer', x=-478.16, y=64.00, z=403.13], MoCEntityBird['Bird'/3245, l='MpServer', x=-517.69, y=63.00, z=561.38], MoCEntitySilverSkeleton['SilverSkeleton'/5807, l='MpServer', x=-439.97, y=51.00, z=475.47], EntityCow['Cow'/2993, l='MpServer', x=-489.88, y=70.00, z=470.88], EntityPig['Pig'/2995, l='MpServer', x=-492.53, y=69.00, z=479.72], MoCEntityMouse['Mouse'/2996, l='MpServer', x=-430.34, y=65.00, z=405.81], MoCEntityTurkey['Turkey'/3253, l='MpServer', x=-386.19, y=64.00, z=565.50], MoCEntityMouse['Mouse'/3254, l='MpServer', x=-399.53, y=64.00, z=553.63], MoCEntityDuck['Duck'/3000, l='MpServer', x=-471.78, y=67.00, z=487.44], MoCEntityMouse['Mouse'/3001, l='MpServer', x=-475.59, y=68.00, z=490.53], MoCEntityTurkey['Turkey'/3003, l='MpServer', x=-472.41, y=60.00, z=387.53], EntitySkeleton['Skeleton'/6334, l='MpServer', x=-527.50, y=45.00, z=488.50], EntityChicken['Chicken'/3012, l='MpServer', x=-488.56, y=69.00, z=491.47], EntityChicken['Chicken'/3013, l='MpServer', x=-511.44, y=71.00, z=414.66], EntityChicken['Chicken'/3014, l='MpServer', x=-511.44, y=66.00, z=404.56], EntityCow['Cow'/3015, l='MpServer', x=-490.25, y=65.00, z=399.66], EntityTrail['unknown'/353741, l='MpServer', x=-449.91, y=62.62, z=448.26], EntityCow['Cow'/3016, l='MpServer', x=-493.19, y=64.00, z=397.22], EntityClientPlayerMP['Mega_Steve01'/2976, l='MpServer', x=-449.91, y=62.62, z=448.26], EntityZombie['Zombie'/5322, l='MpServer', x=-409.50, y=65.00, z=425.27], MoCEntityButterfly['ButterFly'/3022, l='MpServer', x=-428.28, y=66.00, z=480.19], EntityChicken['Chicken'/3023, l='MpServer', x=-518.13, y=72.00, z=447.84], MoCEntityTurkey['Turkey'/3024, l='MpServer', x=-460.09, y=62.06, z=376.41], MoCEntityMouse['Mouse'/3025, l='MpServer', x=-451.38, y=64.00, z=369.34], EntitySheep['Sheep'/3028, l='MpServer', x=-523.28, y=72.00, z=461.81], MoCEntityDuck['Duck'/3284, l='MpServer', x=-363.41, y=63.00, z=559.75], EntitySheep['Sheep'/3029, l='MpServer', x=-516.31, y=72.00, z=451.03], MoCEntityTurkey['Turkey'/3035, l='MpServer', x=-469.66, y=64.00, z=371.94], EntitySheep['Sheep'/3036, l='MpServer', x=-511.13, y=72.00, z=482.88], MoCEntityMouse['Mouse'/3038, l='MpServer', x=-512.19, y=63.00, z=396.47], MoCEntityMouse['Mouse'/3039, l='MpServer', x=-512.28, y=63.00, z=392.56], EntityChicken['Chicken'/3041, l='MpServer', x=-526.56, y=70.00, z=477.41], EntitySheep['Sheep'/3042, l='MpServer', x=-527.78, y=72.00, z=462.53], MoCEntityButterfly['ButterFly'/3298, l='MpServer', x=-352.56, y=65.00, z=567.28], EntitySheep['Sheep'/3043, l='MpServer', x=-523.47, y=72.00, z=464.69], MoCEntityMouse['Mouse'/3299, l='MpServer', x=-362.38, y=68.00, z=569.53], EntityChicken['Chicken'/3044, l='MpServer', x=-529.44, y=74.00, z=470.44], MoCEntityFly['Fly'/3300, l='MpServer', x=-369.84, y=69.00, z=569.31], EntityChicken['Chicken'/3048, l='MpServer', x=-518.59, y=70.00, z=413.59], MoCEntityBear['Bear'/3049, l='MpServer', x=-484.03, y=66.00, z=366.56], MoCEntityBear['Bear'/3050, l='MpServer', x=-488.13, y=66.00, z=367.97], MoCEntityMouse['Mouse'/3051, l='MpServer', x=-494.47, y=64.00, z=381.75], MoCEntityMouse['Mouse'/3052, l='MpServer', x=-495.47, y=62.53, z=376.56], MoCEntityBird['Bird'/3310, l='MpServer', x=-540.66, y=65.00, z=576.06], MoCEntityMouse['Mouse'/3056, l='MpServer', x=-389.69, y=62.53, z=464.47], MoCEntityMole['Mole'/3060, l='MpServer', x=-531.03, y=72.00, z=439.28], MoCEntityMouse['Mouse'/3061, l='MpServer', x=-537.09, y=69.00, z=440.44], MoCEntityMouse['Mouse'/3062, l='MpServer', x=-512.59, y=63.00, z=386.53], MoCEntityMouse['Mouse'/3064, l='MpServer', x=-499.09, y=65.00, z=367.59], EntitySkeleton['Skeleton'/6136, l='MpServer', x=-442.50, y=17.00, z=505.50], MoCEntityTurkey['Turkey'/3066, l='MpServer', x=-459.88, y=65.00, z=361.59], MoCEntityTurkey['Turkey'/3324, l='MpServer', x=-337.53, y=62.15, z=575.84], MoCEntityGoat['Goat'/3071, l='MpServer', x=-378.09, y=61.00, z=442.09]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Non-integrated multiplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.func_72914_a(WorldClient.java:373)
+	at net.minecraft.client.Minecraft.func_71396_d(Minecraft.java:2444)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:919)
+	at net.minecraft.client.main.Main.main(SourceFile:148)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at org.prismlauncher.launcher.impl.StandardLauncher.launch(StandardLauncher.java:87)
+	at org.prismlauncher.EntryPoint.listen(EntryPoint.java:129)
+	at org.prismlauncher.EntryPoint.main(EntryPoint.java:70)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 1.8.0_411, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 1093654480 bytes (1042 MB) / 2476736512 bytes (2362 MB) up to 4772593664 bytes (4551 MB)
+	JVM Flags: 3 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xms512m -Xmx5120m
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 13, tallocated: 95
+	FML: MCP v9.05 FML v7.10.99.99 Minecraft Forge 10.13.4.1614 22 mods loaded, 22 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJA	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJA	FML{7.10.99.99} [Forge Mod Loader] (forge-1.7.10-10.13.4.1614-1.7.10-universal.jar) 
+	UCHIJA	Forge{10.13.4.1614} [Minecraft Forge] (forge-1.7.10-10.13.4.1614-1.7.10-universal.jar) 
+	UCHIJA	AdvancedRocketryCore{1} [Advanced Rocketry] (minecraft.jar) 
+	UCHIJA	CodeChickenCore{1.0.7.48} [CodeChicken Core] (minecraft.jar) 
+	UCHIJA	NotEnoughItems{1.0.5.120} [Not Enough Items] (NotEnoughItems-1.7.10-1.0.5.120-universal.jar) 
+	UCHIJA	libVulpes{0.2.8.-37} [libVulpes] (LibVulpes-1.7.10-0.2.8-37-universal.jar) 
+	UCHIJA	advancedRocketry{1.4.0-32} [Advanced Rocketry] (AdvancedRocketry-1.7.10-1.4.0-32.jar) 
+	UCHIJA	Apocalypse{0.0.7} [§cApocalypse§r] (Apocalypse-1.7.10-0.0.7.jar) 
+	UCHIJA	chocolateQuest{1.0} [Chocolate Quest] (chocolateQuest-1.7.10-1.1d.jar) 
+	UCHIJA	cookingbook{1.0.140} [Cooking for Blockheads] (cookingbook-mc1.7.10-1.0.140.jar) 
+	UCHIJA	MineTweaker3{3.1.0} [MineTweaker 3] (CraftTweaker-1.7.10-3.1.0-legacy.jar) 
+	UCHIJA	CustomSpawner{3.3.0} [DrZhark's CustomSpawner] (CustomMobSpawner 3.3.0.zip) 
+	UCHIJA	MoCreatures{6.3.1} [DrZhark's Mo'Creatures Mod] (DrZharks MoCreatures Mod v6.3.1.zip) 
+	UCHIJA	dsurround{1.0.6.4} [Dynamic Surroundings] (DynamicSurroundings-1.7.10-1.0.6.4.jar) 
+	UCHIJA	fastleafdecay{1.4} [Fast Leaf Decay] (FastLeafDecay-1.7.10-1.4.jar) 
+	UCHIJA	gravestone{0.7.10.3} [Gravestone] (GraveStone Mod 0.7.10.3.jar) 
+	UCHIJA	hbm{1.0.27 BETA (5012)} [Hbm's Nuclear Tech] (HBM-NTM-.1.0.27_X5012.jar) 
+	UCHIJA	iChunUtil{4.2.3} [iChunUtil] (iChunUtil-4.2.3.jar) 
+	UCHIJA	MobDismemberment{4.0.0} [MobDismemberment] (MobDismemberment-4.0.0.jar) 
+	UCHIJA	MouseTweaks{2.4.4} [Mouse Tweaks] (MouseTweaks-2.4.4-mc1.7.10.jar) 
+	UCHIJA	harvestcraft{1.7.10j} [Pam's HarvestCraft] (Pam's HarvestCraft 1.7.10Lb.jar) 
+	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.6.0 NVIDIA 537.58' Renderer: 'NVIDIA GeForce RTX 3070/PCIe/SSE2'
+	Launched Version: 1.7.10
+	LWJGL: 2.9.4
+	OpenGL: NVIDIA GeForce RTX 3070/PCIe/SSE2 GL version 4.6.0 NVIDIA 537.58, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Anisotropic filtering is supported and maximum anisotropy is 16.
+Shaders are available because OpenGL 2.1 is supported.
+
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: []
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Anisotropic Filtering: Off (1)

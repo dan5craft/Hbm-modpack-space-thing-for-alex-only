@@ -1,0 +1,127 @@
+---- Minecraft Crash Report ----
+// I let you down. Sorry :(
+
+Time: 8/20/24 5:02 PM
+Description: Unexpected error
+
+java.lang.ArrayIndexOutOfBoundsException: 5
+	at com.hbm.blocks.network.FluidDuctBox.func_149673_e(FluidDuctBox.java:119)
+	at net.minecraft.client.renderer.RenderBlocks.func_147793_a(RenderBlocks.java:8227)
+	at net.minecraft.client.renderer.RenderBlocks.func_147808_b(RenderBlocks.java:5235)
+	at net.minecraft.client.renderer.RenderBlocks.func_147784_q(RenderBlocks.java:4247)
+	at com.hbm.render.block.RenderBoxDuct.renderWorldBlock(RenderBoxDuct.java:183)
+	at cpw.mods.fml.client.registry.RenderingRegistry.renderWorldBlock(RenderingRegistry.java:118)
+	at FMLRenderAccessLibrary.renderWorldBlock(FMLRenderAccessLibrary.java:53)
+	at net.minecraft.client.renderer.RenderBlocks.func_147805_b(RenderBlocks.java:296)
+	at net.minecraft.client.renderer.WorldRenderer.func_147892_a(WorldRenderer.java:181)
+	at net.minecraft.client.renderer.RenderGlobal.func_72716_a(RenderGlobal.java:1530)
+	at net.minecraft.client.renderer.EntityRenderer.func_78471_a(EntityRenderer.java:1187)
+	at net.minecraft.client.renderer.EntityRenderer.func_78480_b(EntityRenderer.java:1011)
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1001)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:898)
+	at net.minecraft.client.main.Main.main(SourceFile:148)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at org.prismlauncher.launcher.impl.StandardLauncher.launch(StandardLauncher.java:87)
+	at org.prismlauncher.EntryPoint.listen(EntryPoint.java:129)
+	at org.prismlauncher.EntryPoint.main(EntryPoint.java:70)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at com.hbm.blocks.network.FluidDuctBox.func_149673_e(FluidDuctBox.java:119)
+	at net.minecraft.client.renderer.RenderBlocks.func_147793_a(RenderBlocks.java:8227)
+	at net.minecraft.client.renderer.RenderBlocks.func_147808_b(RenderBlocks.java:5235)
+	at net.minecraft.client.renderer.RenderBlocks.func_147784_q(RenderBlocks.java:4247)
+	at com.hbm.render.block.RenderBoxDuct.renderWorldBlock(RenderBoxDuct.java:183)
+	at cpw.mods.fml.client.registry.RenderingRegistry.renderWorldBlock(RenderingRegistry.java:118)
+	at FMLRenderAccessLibrary.renderWorldBlock(FMLRenderAccessLibrary.java:53)
+	at net.minecraft.client.renderer.RenderBlocks.func_147805_b(RenderBlocks.java:296)
+	at net.minecraft.client.renderer.WorldRenderer.func_147892_a(WorldRenderer.java:181)
+	at net.minecraft.client.renderer.RenderGlobal.func_72716_a(RenderGlobal.java:1530)
+	at net.minecraft.client.renderer.EntityRenderer.func_78471_a(EntityRenderer.java:1187)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 2 total; [EntityClientPlayerMP['Mega_Steve01'/3868, l='MpServer', x=-248.68, y=54.62, z=1421.28], EntityOtherPlayerMP['THE_abemad'/3493, l='MpServer', x=-249.06, y=53.00, z=1419.97]]
+	Chunk stats: MultiplayerChunkCache: 5, 5
+	Level seed: 0
+	Level generator: ID 00 - default, ver 1. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (267,64,-133), Chunk: (at 11,4,11 in 16,-9; contains blocks 256,0,-144 to 271,255,-129), Region: (0,-1; contains chunks 0,-32 to 31,-1, blocks 0,0,-512 to 511,255,-1)
+	Level time: 2313 game time, 2313 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Cheats: false
+	Forced entities: 139 total; [EntityClientPlayerMP['Mega_Steve01'/3868, l='MpServer', x=-248.68, y=54.62, z=1421.28], EntityBat['Bat'/3356, l='MpServer', x=-263.22, y=36.00, z=1435.12], EntityItem['item.item.egg'/3357, l='MpServer', x=-256.44, y=53.13, z=1428.13], EntitySkeleton['Skeleton'/3358, l='MpServer', x=-253.41, y=30.00, z=1430.34], EntityEnderman['Enderman'/3359, l='MpServer', x=-254.41, y=29.92, z=1429.69], EntityItem['item.item.egg'/3360, l='MpServer', x=-241.63, y=46.13, z=1434.47], EntityItem['item.item.feather'/3361, l='MpServer', x=-240.38, y=47.13, z=1435.69], EntityItem['item.item.chickenRaw'/3362, l='MpServer', x=-240.13, y=47.13, z=1436.78], EntityItem['item.item.feather'/3363, l='MpServer', x=-241.31, y=46.13, z=1438.13], EntityItem['item.item.chickenRaw'/3364, l='MpServer', x=-241.88, y=46.13, z=1438.63], EntityChicken['Chicken'/3365, l='MpServer', x=-253.16, y=53.00, z=1429.84], EntityChicken['Chicken'/3366, l='MpServer', x=-249.84, y=53.00, z=1424.84], EntityChicken['Chicken'/3367, l='MpServer', x=-253.84, y=53.00, z=1429.84], EntityChicken['Chicken'/3368, l='MpServer', x=-249.16, y=53.00, z=1424.85], EntityChicken['Chicken'/3369, l='MpServer', x=-253.84, y=54.00, z=1429.84], EntityChicken['Chicken'/3370, l='MpServer', x=-253.16, y=53.00, z=1429.84], EntityChicken['Chicken'/3371, l='MpServer', x=-253.16, y=54.00, z=1429.84], EntityChicken['Chicken'/3372, l='MpServer', x=-253.16, y=53.00, z=1429.84], EntityChicken['Chicken'/3373, l='MpServer', x=-253.84, y=53.00, z=1429.84], EntityTrail['unknown'/301, l='MpServer', x=-249.06, y=53.00, z=1419.97], EntityChicken['Chicken'/3374, l='MpServer', x=-253.84, y=53.00, z=1429.84], EntityChicken['Chicken'/3375, l='MpServer', x=-253.16, y=53.00, z=1429.84], EntityChicken['Chicken'/3376, l='MpServer', x=-249.84, y=53.00, z=1424.84], EntityChicken['Chicken'/3377, l='MpServer', x=-250.52, y=53.00, z=1428.73], EntityChicken['Chicken'/3378, l='MpServer', x=-248.88, y=53.00, z=1428.84], EntityChicken['Chicken'/3379, l='MpServer', x=-253.84, y=53.00, z=1429.84], EntityChicken['Chicken'/3380, l='MpServer', x=-253.16, y=53.00, z=1429.84], EntityChicken['Chicken'/3381, l='MpServer', x=-249.16, y=53.00, z=1424.85], EntityChicken['Chicken'/3382, l='MpServer', x=-253.16, y=53.00, z=1429.84], EntityChicken['Chicken'/3383, l='MpServer', x=-249.16, y=53.00, z=1424.85], EntityChicken['Chicken'/3384, l='MpServer', x=-251.02, y=53.00, z=1428.15], EntityChicken['Chicken'/3385, l='MpServer', x=-249.84, y=53.00, z=1424.84], EntityChicken['Chicken'/3386, l='MpServer', x=-253.81, y=53.00, z=1429.18], EntityChicken['Chicken'/3387, l='MpServer', x=-252.84, y=53.00, z=1428.16], EntityChicken['Chicken'/3388, l='MpServer', x=-253.41, y=53.00, z=1428.44], EntityChicken['Chicken'/3389, l='MpServer', x=-254.86, y=53.00, z=1428.27], EntityChicken['Chicken'/3390, l='MpServer', x=-252.25, y=53.00, z=1428.84], EntityChicken['Chicken'/3391, l='MpServer', x=-254.22, y=53.00, z=1428.82], EntityChicken['Chicken'/3392, l='MpServer', x=-252.78, y=53.00, z=1424.25], EntityChicken['Chicken'/3393, l='MpServer', x=-251.11, y=53.00, z=1428.85], EntityChicken['Chicken'/3394, l='MpServer', x=-249.97, y=53.00, z=1428.16], EntityChicken['Chicken'/3395, l='MpServer', x=-251.74, y=53.00, z=1428.85], EntityChicken['Chicken'/3396, l='MpServer', x=-252.06, y=53.00, z=1425.91], EntityChicken['Chicken'/3397, l='MpServer', x=-251.16, y=53.00, z=1427.19], EntityChicken['Chicken'/3398, l='MpServer', x=-247.69, y=53.00, z=1428.16], EntityChicken['Chicken'/3399, l='MpServer', x=-249.15, y=53.00, z=1424.23], EntityChicken['Chicken'/3400, l='MpServer', x=-251.84, y=53.00, z=1427.03], EntityChicken['Chicken'/3401, l='MpServer', x=-252.28, y=53.00, z=1428.31], EntityChicken['Chicken'/3402, l='MpServer', x=-252.84, y=53.00, z=1428.78], EntityChicken['Chicken'/3403, l='MpServer', x=-246.91, y=54.00, z=1430.72], EntityChicken['Chicken'/3404, l='MpServer', x=-253.53, y=53.75, z=1428.47], EntityChicken['Chicken'/3405, l='MpServer', x=-254.28, y=56.00, z=1429.91], EntityChicken['Chicken'/3406, l='MpServer', x=-251.09, y=53.00, z=1426.75], EntityChicken['Chicken'/3407, l='MpServer', x=-251.44, y=53.00, z=1428.30], EntityItem['item.item.egg'/3408, l='MpServer', x=-254.34, y=53.13, z=1428.88], EntityItem['item.item.egg'/3409, l='MpServer', x=-249.13, y=53.13, z=1428.13], EntityItem['item.item.gadget_core'/3410, l='MpServer', x=-253.38, y=53.13, z=1428.88], EntityItem['item.item.gadget_core'/3411, l='MpServer', x=-252.47, y=53.13, z=1428.88], EntityItem['item.item.gadget_core'/3412, l='MpServer', x=-252.28, y=53.13, z=1428.88], EntityItem['item.item.gadget_core'/3413, l='MpServer', x=-254.88, y=53.13, z=1428.88], EntityItem['item.item.gadget_core'/3414, l='MpServer', x=-253.38, y=53.13, z=1427.16], EntityItem['item.item.gadget_core'/3415, l='MpServer', x=-254.72, y=53.13, z=1427.56], EntityItem['item.item.gadget_core'/3416, l='MpServer', x=-253.13, y=53.13, z=1427.78], EntityItem['item.item.gadget_core'/3417, l='MpServer', x=-253.13, y=53.13, z=1427.19], EntityItem['item.item.gadget_core'/3418, l='MpServer', x=-254.88, y=53.13, z=1428.44], EntityItem['item.item.gadget_core'/3419, l='MpServer', x=-254.88, y=53.13, z=1427.88], EntityItem['item.item.gadget_core'/3420, l='MpServer', x=-254.72, y=53.13, z=1427.88], EntityItem['item.item.gadget_core'/3421, l='MpServer', x=-254.88, y=53.13, z=1428.00], EntityItem['item.item.gadget_core'/3422, l='MpServer', x=-254.44, y=53.13, z=1428.34], EntityItem['item.item.mp_fuselage_10_kerosene_desert'/3423, l='MpServer', x=-251.88, y=53.13, z=1427.69], EntityItemWaste['item.item.rbmk_pellet_mes'/3424, l='MpServer', x=-251.13, y=53.21, z=1427.84], EntityItemWaste['item.item.rbmk_pellet_mes'/3425, l='MpServer', x=-250.47, y=53.21, z=1428.88], EntityItem['item.item.chickenRaw'/3426, l='MpServer', x=-250.22, y=53.13, z=1433.31], EntityItem['item.item.feather'/3427, l='MpServer', x=-250.88, y=53.13, z=1431.13], EntityChicken['Chicken'/3428, l='MpServer', x=-250.38, y=55.00, z=1425.25], EntityChicken['Chicken'/3429, l='MpServer', x=-232.59, y=46.00, z=1431.81], EntityChicken['Chicken'/3430, l='MpServer', x=-233.25, y=46.00, z=1431.84], EntityChicken['Chicken'/3431, l='MpServer', x=-230.19, y=46.00, z=1431.84], EntityChicken['Chicken'/3432, l='MpServer', x=-227.47, y=47.00, z=1435.31], EntityChicken['Chicken'/3433, l='MpServer', x=-233.81, y=46.00, z=1431.84], EntityChicken['Chicken'/3434, l='MpServer', x=-230.88, y=46.00, z=1431.84], EntityChicken['Chicken'/3435, l='MpServer', x=-230.81, y=46.00, z=1431.16], EntityChicken['Chicken'/3436, l='MpServer', x=-236.60, y=46.00, z=1431.34], EntityChicken['Chicken'/3437, l='MpServer', x=-227.41, y=46.00, z=1433.81], EntityChicken['Chicken'/3438, l='MpServer', x=-234.88, y=46.00, z=1431.84], EntityChicken['Chicken'/3439, l='MpServer', x=-236.47, y=46.00, z=1431.84], EntityChicken['Chicken'/3440, l='MpServer', x=-234.34, y=46.00, z=1431.84], EntityChicken['Chicken'/3441, l='MpServer', x=-229.34, y=46.00, z=1431.84], EntityChicken['Chicken'/3442, l='MpServer', x=-234.84, y=46.00, z=1431.16], EntityChicken['Chicken'/3443, l='MpServer', x=-234.28, y=46.00, z=1431.25], EntityChicken['Chicken'/3444, l='MpServer', x=-231.41, y=46.00, z=1431.81], EntityChicken['Chicken'/3445, l='MpServer', x=-232.13, y=46.00, z=1431.16], EntityChicken['Chicken'/3446, l='MpServer', x=-238.47, y=46.00, z=1431.19], EntityChicken['Chicken'/3447, l='MpServer', x=-233.22, y=46.00, z=1431.16], EntityChicken['Chicken'/3448, l='MpServer', x=-233.78, y=46.00, z=1431.16], EntityChicken['Chicken'/3449, l='MpServer', x=-237.84, y=46.00, z=1431.16], EntityChicken['Chicken'/3450, l='MpServer', x=-231.53, y=46.00, z=1431.16], EntityItem['item.item.egg'/3451, l='MpServer', x=-234.88, y=46.13, z=1431.78], EntityItem['item.item.egg'/3452, l='MpServer', x=-231.88, y=46.13, z=1431.88], EntityItem['item.item.egg'/3453, l='MpServer', x=-226.66, y=46.13, z=1435.69], EntityItem['item.item.egg'/3454, l='MpServer', x=-237.19, y=46.13, z=1431.63], EntityItem['item.item.egg'/3455, l='MpServer', x=-233.16, y=46.13, z=1437.44], EntityItem['item.item.egg'/3456, l='MpServer', x=-232.81, y=46.13, z=1431.56], EntityItem['item.item.egg'/3457, l='MpServer', x=-230.13, y=46.13, z=1431.44], EntityItem['item.item.egg'/3458, l='MpServer', x=-235.72, y=46.13, z=1431.47], EntityItem['item.item.egg'/3459, l='MpServer', x=-228.88, y=46.13, z=1438.69], EntityItem['item.item.egg'/3460, l='MpServer', x=-239.75, y=46.13, z=1431.88], EntityItem['item.item.egg'/3461, l='MpServer', x=-235.72, y=46.13, z=1439.91], EntityItem['item.item.chickenRaw'/3462, l='MpServer', x=-236.13, y=46.13, z=1439.50], EntityItem['item.item.feather'/3463, l='MpServer', x=-228.72, y=46.13, z=1438.00], EntityItem['item.item.chickenRaw'/3464, l='MpServer', x=-228.88, y=46.13, z=1437.13], EntityItem['item.item.chickenRaw'/3465, l='MpServer', x=-226.00, y=46.13, z=1436.28], EntityItem['item.item.feather'/3466, l='MpServer', x=-225.72, y=44.13, z=1437.06], EntityItem['item.item.feather'/3467, l='MpServer', x=-237.88, y=46.13, z=1437.38], EntityItem['item.item.chickenRaw'/3468, l='MpServer', x=-236.78, y=46.13, z=1437.97], EntityItem['item.item.chickenRaw'/3469, l='MpServer', x=-232.38, y=46.13, z=1437.88], EntityItem['item.item.feather'/3470, l='MpServer', x=-232.72, y=46.13, z=1437.88], EntityItem['item.item.feather'/3471, l='MpServer', x=-235.88, y=46.13, z=1438.13], EntityChicken['Chicken'/3472, l='MpServer', x=-228.99, y=51.00, z=1424.77], EntityItem['item.item.egg'/3473, l='MpServer', x=-235.88, y=51.13, z=1424.41], EntityItemFrame['entity.ItemFrame.name'/3474, l='MpServer', x=-245.06, y=54.50, z=1419.50], EntityItemFrame['entity.ItemFrame.name'/3475, l='MpServer', x=-245.06, y=54.50, z=1421.50], EntityItemFrame['entity.ItemFrame.name'/3476, l='MpServer', x=-245.06, y=55.50, z=1420.50], EntityItemFrame['entity.ItemFrame.name'/3477, l='MpServer', x=-245.06, y=56.50, z=1419.50], EntityItemFrame['entity.ItemFrame.name'/3478, l='MpServer', x=-245.06, y=56.50, z=1421.50], EntityDecoration['entity.chocolateQuest.Decoration.name'/3479, l='MpServer', x=-243.11, y=60.00, z=1420.61], EntityChicken['Chicken'/3480, l='MpServer', x=-245.66, y=53.00, z=1417.25], EntityItemFrame['entity.ItemFrame.name'/3481, l='MpServer', x=-245.06, y=55.50, z=1421.50], EntityChicken['Chicken'/3482, l='MpServer', x=-249.85, y=53.00, z=1423.88], EntityChicken['Chicken'/3483, l='MpServer', x=-249.31, y=53.00, z=1423.85], EntityItem['item.item.egg'/3484, l='MpServer', x=-245.13, y=53.13, z=1417.75], EntityItem['item.tile.oreIron'/3485, l='MpServer', x=-249.88, y=53.13, z=1416.03], EntityItem['item.item.nugget_beryllium'/3486, l='MpServer', x=-247.91, y=53.13, z=1417.53], EntityItem['item.item.billet_pu238be'/3487, l='MpServer', x=-249.81, y=53.13, z=1417.91], EntityItem['item.item.chickenRaw'/3488, l='MpServer', x=-254.28, y=53.13, z=1423.44], EntityOtherPlayerMP['THE_abemad'/3493, l='MpServer', x=-249.06, y=53.00, z=1419.97], EntityChicken['Chicken'/3501, l='MpServer', x=-230.28, y=51.00, z=1423.47], EntityOtherPlayerMP['THE_abemad'/3493, l='MpServer', x=-249.06, y=53.00, z=1419.97], EntityZombie['Zombie'/3813, l='MpServer', x=-265.50, y=18.00, z=1431.50]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Non-integrated multiplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.func_72914_a(WorldClient.java:373)
+	at net.minecraft.client.Minecraft.func_71396_d(Minecraft.java:2444)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:927)
+	at net.minecraft.client.main.Main.main(SourceFile:148)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at org.prismlauncher.launcher.impl.StandardLauncher.launch(StandardLauncher.java:87)
+	at org.prismlauncher.EntryPoint.listen(EntryPoint.java:129)
+	at org.prismlauncher.EntryPoint.main(EntryPoint.java:70)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 1.8.0_411, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 1335957248 bytes (1274 MB) / 2248671232 bytes (2144 MB) up to 4772593664 bytes (4551 MB)
+	JVM Flags: 3 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xms512m -Xmx5120m
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 13, tallocated: 95
+	FML: MCP v9.05 FML v7.10.99.99 Minecraft Forge 10.13.4.1614 16 mods loaded, 16 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJA	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJA	FML{7.10.99.99} [Forge Mod Loader] (forge-1.7.10-10.13.4.1614-1.7.10-universal.jar) 
+	UCHIJA	Forge{10.13.4.1614} [Minecraft Forge] (forge-1.7.10-10.13.4.1614-1.7.10-universal.jar) 
+	UCHIJA	CodeChickenCore{1.0.7.48} [CodeChicken Core] (minecraft.jar) 
+	UCHIJA	NotEnoughItems{1.0.5.120} [Not Enough Items] (NotEnoughItems-1.7.10-1.0.5.120-universal.jar) 
+	UCHIJA	chocolateQuest{1.0} [Chocolate Quest] (chocolateQuest-1.7.10-1.1d.jar) 
+	UCHIJA	cookingbook{1.0.140} [Cooking for Blockheads] (cookingbook-mc1.7.10-1.0.140.jar) 
+	UCHIJA	dsurround{1.0.6.4} [Dynamic Surroundings] (DynamicSurroundings-1.7.10-1.0.6.4.jar) 
+	UCHIJA	fastleafdecay{1.4} [Fast Leaf Decay] (FastLeafDecay-1.7.10-1.4.jar) 
+	UCHIJA	gravestone{0.7.10.3} [Gravestone] (GraveStone Mod 0.7.10.3.jar) 
+	UCHIJA	hbm{1.0.27 BETA (5012)} [Hbm's Nuclear Tech] (HBM-NTM-.1.0.27_X5012.jar) 
+	UCHIJA	iChunUtil{4.2.3} [iChunUtil] (iChunUtil-4.2.3.jar) 
+	UCHIJA	MobDismemberment{4.0.0} [MobDismemberment] (MobDismemberment-4.0.0.jar) 
+	UCHIJA	MouseTweaks{2.4.4} [Mouse Tweaks] (MouseTweaks-2.4.4-mc1.7.10.jar) 
+	UCHIJA	harvestcraft{1.7.10j} [Pam's HarvestCraft] (Pam's HarvestCraft 1.7.10Lb.jar) 
+	UCHIJA	worldedit{6.1.1} [WorldEdit] (worldedit-forge-mc1.7.10-6.1.1-dist.jar) 
+	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.6.0 NVIDIA 537.58' Renderer: 'NVIDIA GeForce RTX 3070/PCIe/SSE2'
+	Launched Version: 1.7.10
+	LWJGL: 2.9.4
+	OpenGL: NVIDIA GeForce RTX 3070/PCIe/SSE2 GL version 4.6.0 NVIDIA 537.58, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Anisotropic filtering is supported and maximum anisotropy is 16.
+Shaders are available because OpenGL 2.1 is supported.
+
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: []
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Anisotropic Filtering: Off (1)

@@ -1,0 +1,22 @@
+INFO: Classes for registry class minetweaker.mods.ic2.ClassRegistry not found, skipping
+INFO: Loaded class registry: NEI mod support
+INFO: Loaded class registry: MFR mod support
+INFO: MineTweaker: Building registry
+INFO: MineTweaker: Sucessfully built item registry
+INFO: Adding minetweaker command mfr
+INFO: Removing Copper Ingot from ore dictionary entry ingotCopper
+INFO: Removing Steel Ingot from ore dictionary entry ingotSteel
+INFO: Removing Titanium Ingot from ore dictionary entry ingotTitanium
+INFO: Removing Aluminum Ingot from ore dictionary entry ingotAluminum
+INFO: Removing Iron Dust from ore dictionary entry dustIron
+INFO: Removing Gold Dust from ore dictionary entry dustGold
+INFO: Removing Copper Dust from ore dictionary entry dustCopper
+INFO: Removing Steel Dust from ore dictionary entry dustSteel
+INFO: Removing Titanium Dust from ore dictionary entry dustTitanium
+INFO: Removing Aluminum Dust from ore dictionary entry dustAluminum
+INFO: Removing Iron Plate from ore dictionary entry plateIron
+INFO: Removing Gold Plate from ore dictionary entry plateGold
+INFO: Removing Copper Plate from ore dictionary entry plateCopper
+INFO: Removing Steel Plate from ore dictionary entry plateSteel
+INFO: Removing Titanium Plate from ore dictionary entry plateTitanium
+INFO: Removing Aluminum Plate from ore dictionary entry plateAluminum
